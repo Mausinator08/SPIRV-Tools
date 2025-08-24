@@ -37,10 +37,10 @@ set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
 # Require at least C++17
 if(NOT CMAKE_CXX_STANDARD)
-  set(CMAKE_CXX_STANDARD 17)
+  set(CMAKE_CXX_STANDARD 23)
 endif()
-if(${CMAKE_CXX_STANDARD} LESS 17)
-  message(FATAL_ERROR "SPIRV-Tools requires C++17 or later, but is configured for C++${CMAKE_CXX_STANDARD})")
+if(${CMAKE_CXX_STANDARD} LESS 23)
+  message(FATAL_ERROR "SPIRV-Tools requires C++23 or later, but is configured for C++${CMAKE_CXX_STANDARD})")
 endif()
 set(CMAKE_CXX_EXTENSIONS OFF)
 
